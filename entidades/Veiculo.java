@@ -14,6 +14,14 @@ public abstract class Veiculo {
     }
     
     public abstract double calcularConsumo();
+
+    public void cadastraViagem(double km) {
+        if (km > 0) {
+            this.quilometragem += km;
+        } else {
+            System.out.println("Distância inválida.");
+        }
+    }
     
     public void mostrar(){
         System.out.println("Veículo cadastrado: " + marca + " " + modelo);
@@ -33,10 +41,6 @@ public abstract class Veiculo {
     
     public double getQuilometragem() {
         return quilometragem;
-    }
-    
-    public void setQuilometragem(double quilometragem) {
-        this.quilometragem = quilometragem;
     }
     
 }
