@@ -1,11 +1,11 @@
 package entidades;
 
 public class Carro extends Veiculo {
-    private int numeroPortas;
+    private double consumoCombustivel;
 
-    public Carro(String marca, String modelo, int ano, double quilometragem, int numeroPortas) {
+    public Carro(String marca, String modelo, int ano, double quilometragem, double consumoCombustivel) {
         super(marca, modelo, ano, quilometragem);
-        this.numeroPortas = numeroPortas;
+        this.consumoCombustivel = consumoCombustivel;
     }
 
     @Override
@@ -13,8 +13,4 @@ public class Carro extends Veiculo {
         return 10.0;
     }
 
-    public int getNumeroPortas() {
-        return numeroPortas;
-    }
-    
 }
