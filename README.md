@@ -27,3 +27,6 @@ O sistema apresentará as seguintes informações ao usuário:
 - Linguagem: **Java/Python/C++** (defina conforme seu projeto)
 - Paradigma: **Programação Orientada a Objetos (POO)**
 - Estruturas de Dados: **Listas, Interfaces, Tratamento de Erros**
+
+## 📜 Licença
+Este projeto é apenas para fins acadêmicos.
