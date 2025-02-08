@@ -24,7 +24,7 @@ O sistema apresentará as seguintes informações ao usuário:
 
 ## 🛠 Tecnologias Utilizadas
 
-- Linguagem: **Java/Python/C++** (defina conforme seu projeto)
+- Linguagem: **Java**
 - Paradigma: **Programação Orientada a Objetos (POO)**
 - Estruturas de Dados: **Listas, Interfaces, Tratamento de Erros**
 
