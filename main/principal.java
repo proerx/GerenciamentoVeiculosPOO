@@ -24,11 +24,12 @@ public class principal {
     public static void main(String[] args) {
         SistemaGerenciamentoVeiculos sistema = new SistemaGerenciamentoVeiculos();
         
-        sistema.adicionarVeiculo(new Carro("Toyota", "Corolla", 2020, 50000, 12.5));
-        sistema.adicionarVeiculo(new Moto("Honda", "CB500", 2019, 30000, 25.0));
-        sistema.adicionarVeiculo(new Caminhao("Volvo", "FH", 2018, 80000, 4.0));
-        sistema.adicionarVeiculo(new CarroEletrico("Tesla", "Model 3", 2022, 10000, 0, 400));
+        sistema.adicionarVeiculo(new Carro("Ford", "Mustang", 2021, 15000, 10.0));
+        sistema.adicionarVeiculo(new Moto("Yamaha", "MT-07", 2020, 12000, 22.0));
+        sistema.adicionarVeiculo(new Caminhao("Mercedes", "Actros", 2019, 90000, 3.5));
+        sistema.adicionarVeiculo(new CarroEletrico("Tesla", "Model X", 2023, 5000, 0, 380));
 
         sistema.listarVeiculos();
     }
+    
 }
