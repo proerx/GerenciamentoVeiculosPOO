@@ -1,20 +1,16 @@
 package entidades;
 
 public class Moto extends Veiculo {
-    private boolean partidaEletrica;
+    private double consumoCombustivel;
 
-    public Moto(String marca, String modelo, int ano, double quilometragem, boolean partidaEletrica) {
+    public Moto(String marca, String modelo, int ano, double quilometragem, double consumoCombustivel) {
         super(marca, modelo, ano, quilometragem);
-        this.partidaEletrica = partidaEletrica;
+        this.consumoCombustivel = consumoCombustivel;
     }
 
     @Override
     public double calcularConsumo() {
-        return 30.0;
-    }
-
-    public boolean isPartidaEletrica() {
-        return partidaEletrica;
+        return consumoCombustivel;
     }
     
 }
