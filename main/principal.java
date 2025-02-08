@@ -5,22 +5,30 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class principal {
-    public static void main(String[] args) {
-        List<Veiculo> frota = new ArrayList<>();
-        
-        Carro carro = new Carro("Toyota", "Corolla", 2020, 15000, 4);
-        Moto moto = new Moto("Honda", "CB 500", 2019, 10000, true);
-        Caminhao caminhao = new Caminhao("Volvo", "FH", 2018, 50000, 10000);
-        
-        frota.add(carro);
-        frota.add(moto);
-        frota.add(caminhao);
-        
-        for (Veiculo veiculo : frota){
-            veiculo.mostrar();
-            System.out.println("Consumo " + veiculo.calcularConsumo());
-        }
+    private List<Veiculo> frota;
 
-        System.out.println("\nFim do programa!");
+    public SistemaGerenciamentoVeiculos() {
+        this.frota = new ArrayList<>();
+    }
+
+    public void adicionarVeiculo(Veiculo veiculo) {
+        frota.add(veiculo);
+    }
+
+    public void listarVeiculos() {
+        for (Veiculo veiculo : frota) {
+            System.out.println(veiculo.getMarca() + " " + veiculo.getModelo() + " - Ano: " + veiculo.getAno());
+        }
+    }
+
+    public static void main(String[] args) {
+        SistemaGerenciamentoVeiculos sistema = new SistemaGerenciamentoVeiculos();
+        
+        sistema.adicionarVeiculo(new Carro("Toyota", "Corolla", 2020, 50000, 12.5));
+        sistema.adicionarVeiculo(new Moto("Honda", "CB500", 2019, 30000, 25.0));
+        sistema.adicionarVeiculo(new Caminhao("Volvo", "FH", 2018, 80000, 4.0));
+        sistema.adicionarVeiculo(new CarroEletrico("Tesla", "Model 3", 2022, 10000, 0, 400));
+
+        sistema.listarVeiculos();
     }
 }
