@@ -1,20 +1,16 @@
 package entidades;
 
 public class Caminhao extends Veiculo {
-    private double capacidadeCarga;
+    private double consumoCombustivel;;
 
-    public Caminhao(String marca, String modelo, int ano, double quilometragem, double capacidadeCarga) {
+    public Caminhao(String marca, String modelo, int ano, double quilometragem, double consumoCombustivel) {
         super(marca, modelo, ano, quilometragem);
-        this.capacidadeCarga = capacidadeCarga;
+        this.consumoCombustivel = consumoCombustivel;
     }
     
     @Override
     public double calcularConsumo() {
-        return 5.0;
+        return consumoCombustivel;
     }
 
-    public double getCapacidadeCarga() {
-        return capacidadeCarga;
-    }
-    
 }
