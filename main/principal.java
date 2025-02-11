@@ -4,7 +4,7 @@ import entidades.*;
 import java.util.List;
 import java.util.Scanner;
 import java.util.ArrayList;
-
+ 
 public class principal {
     public static void main(String[] args) {
         List<Veiculo> frota = new ArrayList<>();
