@@ -2,11 +2,9 @@ package entidades;
 
 public class Carro extends Veiculo {
     private boolean temArCondicionado;
-    private double consumoCombustivel;
 
-    public Carro(String marca, String modelo, int ano, double quilometragem, double consumoCombustivel, boolean temArCondicionado) {
+    public Carro(String marca, String modelo, int ano, double quilometragem, boolean temArCondicionado) {
         super(marca, modelo, ano, quilometragem);
-        this.consumoCombustivel = consumoCombustivel;
         this.temArCondicionado = temArCondicionado;
     }
 
@@ -15,11 +13,9 @@ public class Carro extends Veiculo {
         return 10.0;
     }
 
-    public boolean isTemArCondicionado() {
-        return temArCondicionado;
-    }
-
+    @Override
     public void exibirDetalhes() {
+        System.out.println("Tipo: Carro");
         System.out.println("Tem ar-condicionado: " + (temArCondicionado ? "Sim" : "Não"));
     }
 
