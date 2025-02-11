@@ -1,5 +1,5 @@
 package entidades;
- 
+
 public abstract class Veiculo {
     private String marca;
     private String modelo;
