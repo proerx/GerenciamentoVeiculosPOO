@@ -1,22 +1,22 @@
 package entidades;
- 
-public class Moto extends Veiculo {
-    private int cilindradas;
 
-    public Moto(String marca, String modelo, int ano, double quilometragem, int cilindradas) {
+public class Caminhao extends Veiculo {
+    private double capacidadeCarga;
+
+    public Caminhao(String marca, String modelo, int ano, double quilometragem, double capacidadeCarga) {
         super(marca, modelo, ano, quilometragem);
-        this.cilindradas = cilindradas;
+        this.capacidadeCarga = capacidadeCarga;
     }
-
+    
     @Override
     public double calcularConsumo() {
-        return 30.0;
+        return 5.0;
     }
-
+    
     @Override
     public void exibirDetalhes() {
-        System.out.println("Tipo: Moto");
-        System.out.println("Cilindradas: " + cilindradas);
+        System.out.println("Tipo: Caminhão");
+        System.out.println("Capacidade de carga: " + capacidadeCarga + " toneladas");
     }
     
 }
