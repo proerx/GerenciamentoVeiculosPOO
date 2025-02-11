@@ -12,5 +12,5 @@ public class Moto extends Veiculo {
     public double calcularConsumo() {
         return consumoCombustivel;
     }
-    
+     
 }
