@@ -17,7 +17,7 @@ Este projeto consiste em um sistema que gerencia diferentes tipos de veículos (
 
 O sistema apresentará as seguintes informações ao usuário:
 
-_ Quantidade de veículos cadastrados e o percentual de cada tipo.
+- Quantidade de veículos cadastrados e o percentual de cada tipo.
 - Veículo com maior quilometragem.
 - Veículo mais novo e mais antigo.
 - Veículo com maior e menor consumo de combustível.
