@@ -22,5 +22,5 @@ public class Carro extends Veiculo {
     public void exibirDetalhes() {
         System.out.println("Tem ar-condicionado: " + (temArCondicionado ? "Sim" : "Não"));
     }
- 
+
 }
