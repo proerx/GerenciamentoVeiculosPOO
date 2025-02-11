@@ -1,5 +1,5 @@
 package entidades;
-
+ 
 public class Caminhao extends Veiculo {
     private double capacidadeCarga;
 
