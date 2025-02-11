@@ -12,5 +12,5 @@ public class Carro extends Veiculo {
     public double calcularConsumo() {
         return 10.0;
     }
-
+ 
 }
