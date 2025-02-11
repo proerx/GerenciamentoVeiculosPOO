@@ -1,5 +1,5 @@
 package entidades;
-
+ 
 public abstract class Veiculo {
     private String marca;
     private String modelo;
@@ -42,5 +42,7 @@ public abstract class Veiculo {
     public double getQuilometragem() {
         return quilometragem;
     }
+
+    public abstract void exibirDetalhes();
     
 }
