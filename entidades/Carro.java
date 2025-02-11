@@ -1,5 +1,5 @@
 package entidades;
-
+ 
 public class Carro extends Veiculo {
     private boolean temArCondicionado;
 
