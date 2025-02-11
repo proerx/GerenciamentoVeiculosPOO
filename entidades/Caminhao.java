@@ -12,5 +12,5 @@ public class Caminhao extends Veiculo {
     public double calcularConsumo() {
         return consumoCombustivel;
     }
-
+ 
 }
