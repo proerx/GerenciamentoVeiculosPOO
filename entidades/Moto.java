@@ -22,5 +22,5 @@ public class Moto extends Veiculo {]
     public void exibirDetalhes() {
         System.out.println("Cilindradas: " + cilindradas);
     }
-     
+    
 }
